@@ -36,10 +36,9 @@ const GenreSelection = () => {
     }
   };
 
-  // Close modal and redirect to movies page
   const closeModal = () => {
     setIsModalOpen(false);
-    navigate('/movies');
+    navigate('/movies', { state: { selectedGenres } }); // Pass selectedGenres as state
   };
 
   return (

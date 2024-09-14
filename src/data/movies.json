@@ -1,0 +1,305 @@
+{
+    "movies": [
+      {
+        "id": 1,
+        "name": "The Dark Knight",
+        "description": "Batman faces the Joker in Gotham City.",
+        "director": "Christopher Nolan",
+        "genre": "Action",
+        "releaseDate": "2008-07-18",
+        "duration": 152,
+        "rating": 9.0
+      },
+      {
+        "id": 2,
+        "name": "Mad Max: Fury Road",
+        "description": "In a post-apocalyptic wasteland, Max teams up with Furiosa to flee from a warlord.",
+        "director": "George Miller",
+        "genre": "Action",
+        "releaseDate": "2015-05-15",
+        "duration": 120,
+        "rating": 8.1
+      },
+      {
+        "id": 3,
+        "name": "John Wick",
+        "description": "A retired hitman seeks vengeance for the killing of his dog.",
+        "director": "Chad Stahelski",
+        "genre": "Action",
+        "releaseDate": "2014-10-24",
+        "duration": 101,
+        "rating": 7.4
+      },
+      {
+        "id": 4,
+        "name": "Die Hard",
+        "description": "John McClane takes on terrorists in a Los Angeles skyscraper.",
+        "director": "John McTiernan",
+        "genre": "Action",
+        "releaseDate": "1988-07-20",
+        "duration": 132,
+        "rating": 8.2
+      },
+      {
+        "id": 5,
+        "name": "Gladiator",
+        "description": "A Roman general seeks revenge against the emperor who murdered his family.",
+        "director": "Ridley Scott",
+        "genre": "Action",
+        "releaseDate": "2000-05-05",
+        "duration": 155,
+        "rating": 8.5
+      },
+      {
+        "id": 6,
+        "name": "The Hangover",
+        "description": "Three friends wake up from a bachelor party with no memory of the night before.",
+        "director": "Todd Phillips",
+        "genre": "Comedy",
+        "releaseDate": "2009-06-05",
+        "duration": 100,
+        "rating": 7.7
+      },
+      {
+        "id": 7,
+        "name": "Superbad",
+        "description": "Two high school friends try to score alcohol for a party and impress their crushes.",
+        "director": "Greg Mottola",
+        "genre": "Comedy",
+        "releaseDate": "2007-08-17",
+        "duration": 113,
+        "rating": 7.6
+      },
+      {
+        "id": 8,
+        "name": "Anchorman",
+        "description": "Ron Burgundy is the top-rated newsman in San Diego in the 1970s.",
+        "director": "Adam McKay",
+        "genre": "Comedy",
+        "releaseDate": "2004-07-09",
+        "duration": 94,
+        "rating": 7.2
+      },
+      {
+        "id": 9,
+        "name": "Step Brothers",
+        "description": "Two middle-aged men become stepbrothers and struggle to live together.",
+        "director": "Adam McKay",
+        "genre": "Comedy",
+        "releaseDate": "2008-07-25",
+        "duration": 98,
+        "rating": 6.9
+      },
+      {
+        "id": 10,
+        "name": "Zombieland",
+        "description": "A college student teams up with three strangers to survive a zombie apocalypse.",
+        "director": "Ruben Fleischer",
+        "genre": "Comedy",
+        "releaseDate": "2009-10-02",
+        "duration": 88,
+        "rating": 7.6
+      },
+      {
+        "id": 11,
+        "name": "The Godfather",
+        "description": "The aging patriarch of a crime dynasty transfers control of his empire to his son.",
+        "director": "Francis Ford Coppola",
+        "genre": "Crime",
+        "releaseDate": "1972-03-24",
+        "duration": 175,
+        "rating": 9.2
+      },
+      {
+        "id": 12,
+        "name": "Pulp Fiction",
+        "description": "The lives of two mob hitmen, a boxer, and others intertwine in Los Angeles.",
+        "director": "Quentin Tarantino",
+        "genre": "Crime",
+        "releaseDate": "1994-10-14",
+        "duration": 154,
+        "rating": 8.9
+      },
+      {
+        "id": 13,
+        "name": "Scarface",
+        "description": "In Miami, a Cuban immigrant takes over a drug cartel.",
+        "director": "Brian De Palma",
+        "genre": "Crime",
+        "releaseDate": "1983-12-09",
+        "duration": 170,
+        "rating": 8.3
+      },
+      {
+        "id": 14,
+        "name": "Goodfellas",
+        "description": "The rise and fall of a mob associate over three decades.",
+        "director": "Martin Scorsese",
+        "genre": "Crime",
+        "releaseDate": "1990-09-19",
+        "duration": 146,
+        "rating": 8.7
+      },
+      {
+        "id": 15,
+        "name": "The Departed",
+        "description": "An undercover cop and a mole in the police try to identify each other.",
+        "director": "Martin Scorsese",
+        "genre": "Crime",
+        "releaseDate": "2006-10-06",
+        "duration": 151,
+        "rating": 8.5
+      },
+      {
+        "id": 16,
+        "name": "The Shawshank Redemption",
+        "description": "Two imprisoned men bond over a number of years.",
+        "director": "Frank Darabont",
+        "genre": "Drama",
+        "releaseDate": "1994-09-23",
+        "duration": 142,
+        "rating": 9.3
+      },
+      {
+        "id": 17,
+        "name": "Forrest Gump",
+        "description": "The life story of a man with a low IQ who accomplishes great things.",
+        "director": "Robert Zemeckis",
+        "genre": "Drama",
+        "releaseDate": "1994-07-06",
+        "duration": 142,
+        "rating": 8.8
+      },
+      {
+        "id": 18,
+        "name": "Fight Club",
+        "description": "A disillusioned man forms an underground fight club.",
+        "director": "David Fincher",
+        "genre": "Drama",
+        "releaseDate": "1999-10-15",
+        "duration": 139,
+        "rating": 8.8
+      },
+      {
+        "id": 19,
+        "name": "The Pursuit of Happyness",
+        "description": "A struggling salesman takes custody of his son as he faces financial challenges.",
+        "director": "Gabriele Muccino",
+        "genre": "Drama",
+        "releaseDate": "2006-12-15",
+        "duration": 117,
+        "rating": 8.0
+      },
+      {
+        "id": 20,
+        "name": "A Beautiful Mind",
+        "description": "The story of John Nash, a brilliant but asocial mathematician.",
+        "director": "Ron Howard",
+        "genre": "Drama",
+        "releaseDate": "2001-12-21",
+        "duration": 135,
+        "rating": 8.2
+      },
+      {
+        "id": 21,
+        "name": "Indiana Jones and the Last Crusade",
+        "description": "Indiana Jones goes on a quest to find the Holy Grail.",
+        "director": "Steven Spielberg",
+        "genre": "Adventure",
+        "releaseDate": "1989-05-24",
+        "duration": 127,
+        "rating": 8.2
+      },
+      {
+        "id": 22,
+        "name": "The Lord of the Rings: The Fellowship of the Ring",
+        "description": "A hobbit embarks on a quest to destroy a powerful ring.",
+        "director": "Peter Jackson",
+        "genre": "Adventure",
+        "releaseDate": "2001-12-19",
+        "duration": 178,
+        "rating": 8.8
+      },
+      {
+        "id": 23,
+        "name": "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "description": "A blacksmith teams up with a pirate to rescue the governor's daughter.",
+        "director": "Gore Verbinski",
+        "genre": "Adventure",
+        "releaseDate": "2003-07-09",
+        "duration": 143,
+        "rating": 8.1
+      },
+      {
+        "id": 24,
+        "name": "Jurassic Park",
+        "description": "A group of people try to survive a dinosaur theme park gone wrong.",
+        "director": "Steven Spielberg",
+        "genre": "Adventure",
+        "releaseDate": "1993-06-11",
+        "duration": 127,
+        "rating": 8.2
+      },
+      {
+        "id": 25,
+        "name": "Jumanji",
+        "description": "Two kids find and play a magical board game, releasing a man trapped in it.",
+        "director": "Joe Johnston",
+        "genre": "Adventure",
+        "releaseDate": "1995-12-15",
+        "duration": 104,
+        "rating": 7.0
+      },
+      {
+        "id": 26,
+        "name": "The Exorcist",
+        "description": "A mother seeks the help of two priests to save her daughter from demonic possession.",
+        "director": "William Friedkin",
+        "genre": "Horror",
+        "releaseDate": "1973-12-26",
+        "duration": 122,
+        "rating": 8.0
+      },
+      {
+        "id": 27,
+        "name": "Get Out",
+        "description": "A young African-American man uncovers disturbing secrets when visiting his white girlfriend's family.",
+        "director": "Jordan Peele",
+        "genre": "Horror",
+        "releaseDate": "2017-02-24",
+        "duration": 104,
+        "rating": 7.7
+      },
+      {
+        "id": 28,
+        "name": "The Shining",
+        "description": "A man takes a job as a winter caretaker in a secluded hotel and slowly goes mad.",
+        "director": "Stanley Kubrick",
+        "genre": "Horror",
+        "releaseDate": "1980-05-23",
+        "duration": 146,
+        "rating": 8.4
+      },
+      {
+        "id": 29,
+        "name": "A Nightmare on Elm Street",
+        "description": "A group of teenagers is terrorized by a killer who can attack them in their dreams.",
+        "director": "Wes Craven",
+        "genre": "Horror",
+        "releaseDate": "1984-11-16",
+        "duration": 91,
+        "rating": 7.5
+      },
+      {
+        "id": 30,
+        "name": "The Conjuring",
+        "description": "Paranormal investigators help a family terrorized by a dark presence in their farmhouse.",
+        "director": "James Wan",
+        "genre": "Horror",
+        "releaseDate": "2013-07-19",
+        "duration": 112,
+        "rating": 7.5
+      }
+    ]
+  }
+  
