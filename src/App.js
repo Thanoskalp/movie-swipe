@@ -1,10 +1,29 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import CreateSession from './pages/CreateSession';
+import JoinSession from './pages/JoinSession';
+import WaitingPage from './pages/WaitingPage';
+import GenreSelection from './pages/GenreSelection';
 
 function App() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">Hello, Movie Swipe!</h1>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          {/* Home Page */}
+          <Route path="/" element={<Home />} />
+          
+          {/* Create Session -> Waiting Page */}
+          <Route path="/create-session" element={<CreateSession />} />
+          <Route path="/waiting" element={<WaitingPage />} />
+          
+          {/* Join Session -> Genre Selection */}
+          <Route path="/join-session" element={<JoinSession />} />
+          <Route path="/genreSelection" element={<GenreSelection />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
