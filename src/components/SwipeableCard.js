@@ -1,30 +1,43 @@
 import React from 'react';
+import './SwipeableCard.css'; // Import the CSS file
 
 const SwipeableCard = ({ movie, onSwipeLeft, onSwipeRight }) => {
-  return (
-    <div className="flex justify-center items-center h-96">
-      <div className="relative w-80 h-full bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-2">{movie.name}</h2>
-        <p className="text-sm mb-4">{movie.description}</p>
-        <p className="text-sm font-light">Director: {movie.director}</p>
-        <p className="text-sm font-light">Release Date: {movie.releaseDate}</p>
-        <p className="text-sm font-light">Duration: {movie.duration} mins</p>
-        <p className="text-sm font-light">Genre: {movie.genre}</p>
+  // Use the path relative to the public directory
+  const backgroundImageUrl = `/images/${movie.id}.png`;
 
-        <div className="absolute bottom-0 left-0 w-full flex justify-between p-4">
-          <button
-            className="bg-red-500 text-white px-4 py-2 rounded-lg"
-            onClick={onSwipeLeft}
-          >
-            Swipe Left
-          </button>
-          <button
-            className="bg-green-500 text-white px-4 py-2 rounded-lg"
-            onClick={onSwipeRight}
-          >
-            Swipe Right
-          </button>
+  return (
+    <div
+      className="swipeable-card"
+      style={{
+        backgroundImage: `url(${backgroundImageUrl})`, // Correct template literal syntax
+      }}
+    >
+      <div className="swipeable-card-overlay"></div>
+
+      {/* Movie information */}
+      <div className="swipeable-card-content">
+        <div className="swipeable-card-info-background">
+          <h2 className="swipeable-card-title">{movie.name}</h2>
+          <div className="swipeable-card-separator"></div>
+          <p className="swipeable-card-description">{movie.description}</p>
+          <div className="swipeable-card-separator"></div>
+          <div className="swipeable-card-meta">
+            <p>Director: {movie.movieDirector}</p>
+            <p>Genre: {movie.genre}</p>
+            <p>Release Date: {movie.releaseDate}</p>
+            <p>Duration: {movie.duration} minutes</p>
+          </div>
         </div>
+      </div>
+
+      {/* Swipe buttons */}
+      <div className="swipeable-card-buttons">
+        <button onClick={onSwipeLeft} className="swipeable-card-button-left">
+          Swipe Left
+        </button>
+        <button onClick={onSwipeRight} className="swipeable-card-button-right">
+          Swipe Right
+        </button>
       </div>
     </div>
   );
