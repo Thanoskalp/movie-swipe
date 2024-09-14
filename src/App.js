@@ -5,6 +5,7 @@ import CreateSession from './pages/CreateSession';
 import JoinSession from './pages/JoinSession';
 import WaitingPage from './pages/WaitingPage';
 import GenreSelection from './pages/GenreSelection';
+import Movies from './pages/Movies';
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
           {/* Join Session -> Genre Selection */}
           <Route path="/join-session" element={<JoinSession />} />
           <Route path="/genreSelection" element={<GenreSelection />} />
+
+          {/* Movie Swipping */}
+          <Route path="/movies" element={<Movies />} />
+
         </Routes>
       </div>
     </Router>
