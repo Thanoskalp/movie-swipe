@@ -1,10 +1,8 @@
-.swipeable-card {
-    position: relative;
-    width: 540px;
-    height: 960px;
-    background-color: #e5e7eb; /* Tailwind's gray-200 */
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
-    border-radius: 0.5rem; /* Tailwind's rounded-lg */
+    .swipeable-card {
+    position: absolute;
+    width: 100%; 
+    height: 90%; 
+    border-radius: 0.5rem; /* Rounded corners */
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* Align content to the bottom */
@@ -13,28 +11,32 @@
     background-size: cover;
     background-position: center;
     opacity: 0.9;
-  }
+    }
   
-  .swipeable-card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay with opacity */
-    z-index: 0;
-    border-radius: 0.5rem; /* Same as card border */
-  }
-  
+
   .swipeable-card-content {
     position: relative;
     z-index: 10;
     color: white;
-    width: 100%;
-    text-align: center; /* Center text */
+    text-align: center; 
+    position: relative;
+    width: 540px;
+    height: 960px;
+    background-color: #e5e7eb;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
   }
   
   .swipeable-card-info-background {
+    margin-top: 130%;
     background-color: rgba(0, 0, 0, 0.6); /* Darker background with opacity */
     padding: 1rem;
     border-radius: 0.5rem; /* Same as card border */
@@ -81,10 +83,10 @@
   }
   
   .swipeable-card-button-left {
-    background-color: #ef4444; /* Tailwind's bg-red-500 */
+    background-color: #ef4444; 
   }
   
   .swipeable-card-button-right {
-    background-color: #10b981; /* Tailwind's bg-green-500 */
+    background-color: #10b981;
   }
   

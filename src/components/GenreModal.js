@@ -1,5 +1,5 @@
 import React from 'react';
-import './GenreModal.css'; // Import CSS file for custom styles
+import './GenreModal.css';
 
 const GenreModal = ({ matchingGenres, closeModal }) => {
   return (

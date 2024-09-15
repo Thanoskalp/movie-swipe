@@ -9,7 +9,7 @@ const CreateSession = () => {
     navigate('/waiting');
   }, [navigate]);
 
-  return null; // No need to render anything since we auto-redirect.
+  return null; // No need to render anything since I auto-redirect.
 };
 
 export default CreateSession;
