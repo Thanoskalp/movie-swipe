@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import SwipeableCard from '../components/SwipeableCard';
-import MatchModal from '../components/MatchModal';
-import moviesData from '../data/movies.json';
+import SwipeableCard from '../../components/SwipeableCard/SwipeableCard';
+import MatchModal from '../../components/MatchModal/MatchModal';
+import moviesData from '../../data/movies.json';
 
 const Movies = () => {
   const location = useLocation();
