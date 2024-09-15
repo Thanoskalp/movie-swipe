@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Movie Swipe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movie Swipe is a React application that help users pick movies to watch with their partner after a mutual selection of movie genres.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Genre Selection**: Choose your favorite genres from a list.
+- **Movie Swipe**: Swipe right to indicate interest or left to pass. After three right swipes, a modal will show with the matched movie.
+- **Matching Modal**: View details of the matched movie in a modal dialog.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Tailwind CSS
+- JSON for data storage
+- React Router for navigation
+- React Tinder Card
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **`src/`**: Contains the source code for the application.
+  - **`components/`**: Contains reusable React components.
+    - `SwipeableCard.js`: Component for displaying a movie card with swipe functionality.
+    - `MatchModal.js`: Modal component displayed when a match is found.
+    - `GenreModal.js`: Modal component for showing matching genres.
+    - `GenreCheckbox.js`: Reusable checkbox component for genre selection.
+  - **`data/`**: Contains static JSON files.
+    - `genres.json`: List of available genres.
+    - `movies.json`: List of movies.
+  - **`pages/`**: Contains page components.
+    - `GenreSelection.js`: Page for selecting genres.
+    - `Movies.js`: Page for displaying and swiping through movies.
+    - `CeateSession`: Page for the user to create session and get their session id.
+    - `JoinSession`: Page where user adds their partner's session id and join together.
+    - `WaitingPage`: Page that person who created the session are being redirected until their parted has joined.
+  - **`App.js`**: Main application component that sets up routing and renders pages.
+  - **`index.js`**: Entry point for the React application.
+- **`public/`**: Contains static assets served by the application (e.g., `index.html`).
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+2. **Install Dependencies**:
+    ```bash
+    npm install
+3. **Run Locally**:
+    ```bash
+    npm start
+##

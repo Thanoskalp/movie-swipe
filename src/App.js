@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import CreateSession from './pages/CreateSession';
-import JoinSession from './pages/JoinSession';
-import WaitingPage from './pages/WaitingPage';
-import GenreSelection from './pages/GenreSelection';
-import Movies from './pages/Movies';
+import CreateSession from './pages/CreateSession/CreateSession';
+import JoinSession from './pages/JoinSession/JoinSession';
+import WaitingPage from './pages/WaitingPage/WaitingPage';
+import GenreSelection from './pages/GenreSelection/GenreSelection';
+import Movies from './pages/Movies/Movies';
 
 function App() {
   return (

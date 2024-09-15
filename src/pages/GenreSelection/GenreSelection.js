@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import genresData from '../data/genres.json';
-import GenreModal from '../components/GenreModal';
+import genresData from '../../data/genres.json';
+import GenreModal from '../../components/GenreModal/GenreModal';
 
 const GenreSelection = () => {
   const [selectedGenres, setSelectedGenres] = useState([]);
