@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import genresData from '../data/genres.json';
-import GenreModal from '../components/GenreModal'; // Import the modal component
+import GenreModal from '../components/GenreModal';
 
 const GenreSelection = () => {
   const [selectedGenres, setSelectedGenres] = useState([]);
@@ -32,7 +32,7 @@ const GenreSelection = () => {
     } else {
       const matched = selectedGenres.slice(0, selectedCount - 1);
       setMatchingGenres(matched);
-      setIsModalOpen(true); // Open modal
+      setIsModalOpen(true); 
     }
   };
 

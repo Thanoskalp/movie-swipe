@@ -1,32 +1,34 @@
 import React from 'react';
+import TinderCard from 'react-tinder-card';
+import './SwipeableCard.css';
 
-const SwipeableCard = ({ movie, onSwipeLeft, onSwipeRight }) => {
+const SwipeableCard = ({ movie, onSwipe }) => {
   return (
-    <div className="flex justify-center items-center h-96">
-      <div className="relative w-80 h-full bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-xl font-bold mb-2">{movie.name}</h2>
-        <p className="text-sm mb-4">{movie.description}</p>
-        <p className="text-sm font-light">Director: {movie.director}</p>
-        <p className="text-sm font-light">Release Date: {movie.releaseDate}</p>
-        <p className="text-sm font-light">Duration: {movie.duration} mins</p>
-        <p className="text-sm font-light">Genre: {movie.genre}</p>
-
-        <div className="absolute bottom-0 left-0 w-full flex justify-between p-4">
-          <button
-            className="bg-red-500 text-white px-4 py-2 rounded-lg"
-            onClick={onSwipeLeft}
-          >
-            Swipe Left
-          </button>
-          <button
-            className="bg-green-500 text-white px-4 py-2 rounded-lg"
-            onClick={onSwipeRight}
-          >
-            Swipe Right
-          </button>
+    <TinderCard
+      className="swipeable-card"
+      onSwipe={(dir) => onSwipe(dir)}
+      preventSwipe={['up', 'down']}
+    >
+      <div
+        className="swipeable-card-content"
+        style={{ backgroundImage: `url(/images/${movie.id}.png)` }}
+      >
+        <div className="swipeable-card-info-background">
+          <div className="swipeable-card-info">
+            <h2 className="swipeable-card-title">{movie.name}</h2>
+            <div className="swipeable-card-separator" />
+            <p className="swipeable-card-description">{movie.description}</p>
+            <div className="swipeable-card-separator" />
+            <div className="swipeable-card-meta">
+              <p>Director: {movie.director}</p>
+              <p>Genre: {movie.genre}</p>
+              <p>Release Date: {movie.releaseDate}</p>
+              <p>Duration: {movie.duration} minutes</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </TinderCard>
   );
 };
 
