@@ -13,6 +13,7 @@ const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [matchedMovie, setMatchedMovie] = useState(null);
+  const [isModalActive, setIsModalActive] = useState(false); // Track if the modal is active
 
   useEffect(() => {
     if (selectedGenres && selectedGenres.length > 0) {
@@ -25,21 +26,26 @@ const Movies = () => {
   }, [selectedGenres]);
 
   const handleSwipe = (direction, movie) => {
+    if (isModalActive) return; // Prevent any action if modal is active
+
     if (direction === 'right') {
       setRightSwipes((prevCount) => prevCount + 1);
       if (rightSwipes + 1 === 3) {  // Show modal after 3 right swipes
         setMatchedMovie(movie);
         setShowModal(true);
+        setIsModalActive(true);  // Block further swiping until modal is closed
+        return; // Do not proceed to the next movie
       }
     }
 
-    // Move to the next movie after swipe
+    // Move to the next movie after swipe, only if modal is not active
     setCurrentMovieIndex((prevIndex) => (prevIndex + 1));
   };
 
   const closeModal = () => {
     setShowModal(false);
     setRightSwipes(0);  // Reset right swipes after showing modal
+    setIsModalActive(false);  // Allow swiping again
   };
 
   if (!selectedGenres) {

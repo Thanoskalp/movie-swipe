@@ -36,7 +36,7 @@
   }
   
   .swipeable-card-info-background {
-    margin-top: 130%;
+    margin-top: 100%;
     background-color: rgba(0, 0, 0, 0.6); /* Darker background with opacity */
     padding: 1rem;
     border-radius: 0.5rem; /* Same as card border */
